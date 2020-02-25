@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lacquer|Trade+Winds&display=swap" rel="stylesheet">
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="survey">
+      <h1 id="title">Survey</h1>
+      <p id="description">Tell me more obout you</p>
+      <form action="submit" id="survey-form">
+        <div>
+          <label id="name-label" for="name" class="labels">Name:</label>
+          <input
+            id="name"
+            class="inputs"
+            type="text"
+            placeholder="Enter your name here"
+            name="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="email-label" for="email" class="labels">Email:</label>
+          <input
+            id="email"
+            class="inputs"
+            type="email"
+            placeholder="Enter your email here"
+            name="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label id="number-label" for="age" class="labels">Age:</label>
+          <input
+            id="number"
+            class="inputs"
+            type="number"
+            placeholder="Enter your age here"
+            name="age"
+            min="14"
+            max="120"
+            required
+          />
+        </div>
+        <br /><br />
+
+        <div>
+          <label for="dropdown" class="labels"
+            >Select your favorite food:</label
+          >
+          <select id="dropdown" name="food-selector">
+            <optgroup>
+              <option class="food-item" value="">Select any option</option>
+              <option class="food-item" name="Pizza" value="Pizza"
+                >Pizza</option
+              >
+              <option class="food-item" name="Hot Dog" value="Hot Dog"
+                >Hot Dog</option
+              >
+              <option class="food-item" name="Hamburguer" value="Hamburguer"
+                >Hamburguer</option
+              >
+              <option
+                class="food-item"
+                name="Bandeja Paisa"
+                value="Bandeja Paisa"
+                >Bandeja Paisa</option
+              >
+            </optgroup>
+          </select>
+        </div>
+        <br /><br />
+
+        <div>
+          <label for="favorite-flavor">Vanilla or chocolate?</label>
+          <ul id="favorite-flavor">
+            <li>
+              <input
+                name="radio-buttons"
+                class="radio"
+                id="vanilla"
+                type="radio"
+                value="1"
+              /><label for="">Vanilla</label>
+            </li>
+            <li>
+              <input
+                name="radio-buttons"
+                class="radio"
+                id="chocolate"
+                type="radio"
+                value="2"
+              /><label for="">Chocolate</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <label for="favorite-ingredients"
+            >Select your favorite ingredients</label
+          >
+          <ul id="favorite-ingredients">
+            <li><input type="checkbox" value="1" />Pepperoni</li>
+            <li><input type="checkbox" value="2" />Chiken</li>
+            <li><input type="checkbox" value="3" />Meat</li>
+            <li><input type="checkbox" value="4" />Sausage</li>
+            <li><input type="checkbox" value="5" />Chili</li>
+          </ul>
+        </div>
+
+        <div>
+          <label for="comments">Any Comments or Suggestions?</label><br />
+          <textarea
+            placeholder="Enter your comments here..."
+            name="comments"
+            id="comments"
+          ></textarea>
+        </div>
+        <div class="btn-container">
+        <button type="submit" id="submit">Submit</button>
+
+        </div>
+      </form>
+    </main>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

@@ -1,0 +1,20 @@
+$background:"https://image.freepik.com/free-photo/black-textured-background_24972-764.jpg";
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url($background);
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+.inputs{
+    width: 65%;
+    margin-bottom: 10px;
+}

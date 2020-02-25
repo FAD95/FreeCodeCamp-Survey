@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://image.freepik.com/free-photo/black-textured-background_24972-764.jpg");
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover; }
+
+ul, li {
+  list-style: none;
+  padding: 0; }
+
+.inputs {
+  width: 65%;
+  margin-bottom: 10px; }
+
+#survey {
+  width: 80%;
+  max-width: 300px;
+  height: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #94959b;
+  opacity: .6;
+  border-radius: 20px;
+  color: black;
+  -webkit-box-shadow: 3px 3px 30px 9px rgba(0, 0, 0, 0.36);
+  box-shadow: 3px 3px 30px 9px rgba(0, 0, 0, 0.36);
+  -webkit-box-shadow: inset 3px 3px 30px 9px rgba(0, 0, 0, 0.36);
+  box-shadow: inset 3px 3px 30px 9px rgba(0, 0, 0, 0.36);
+  padding-bottom: 30px;
+  margin-bottom: 20px; }
+  #survey #title {
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Trade Winds", "Lucida Console", Monaco, monospace; }
+  #survey #description {
+    text-align: center;
+    font-family: "Lacquer", "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+  #survey #survey-form {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: "Lacquer", "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+    #survey #survey-form #comments {
+      width: 70%; }
+    #survey #survey-form #dropdown {
+      width: 100%;
+      max-width: 200px; }
+    #survey #survey-form optgroup, #survey #survey-form select {
+      font-size: 12px; }
+    #survey #survey-form .btn-container {
+      text-align: center;
+      margin-top: 10px;
+      padding: 5px; }
+      #survey #survey-form .btn-container #submit {
+        font-family: "Trade Winds", "Lucida Console", Monaco, monospace;
+        background-color: #130e12;
+        max-width: 100px;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 18px;
+        color: whitesmoke; }
+
+@media screen and (max-width: 90px) {
+  #title {
+    font-size: 12px; }
+  #description {
+    font-size: 10px; }
+  #survey-form {
+    font-size: 6px !important; }
+    #survey-form .inputs::-webkit-input-placeholder {
+      font-size: 7px; }
+    #survey-form .inputs:-ms-input-placeholder {
+      font-size: 7px; }
+    #survey-form .inputs::-ms-input-placeholder {
+      font-size: 7px; }
+    #survey-form .inputs::placeholder {
+      font-size: 7px; }
+    #survey-form optgroup, #survey-form select {
+      font-size: 7px !important; }
+    #survey-form #submit {
+      font-size: 6px; } }
+
+@media screen and (min-width: 90px) and (max-width: 160px) {
+  #title {
+    font-size: 18px; }
+  #survey-form {
+    font-size: 14px; }
+  optgroup, select {
+    font-size: 12px; } }
